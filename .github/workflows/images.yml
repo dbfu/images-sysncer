@@ -29,5 +29,5 @@ jobs:
       run: |
          skopeo copy docker://docker.io/mysql:8.0.29 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/mysql:8.0.29
          skopeo copy docker://docker.io/node:16.16.0 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/node:16.16.0
-         skopeo copy docker://docker.io/bitnami/minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio:latest
+         skopeo --override-arch arm64 copy docker://docker.io/bitnami/minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-arm64:latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称 
