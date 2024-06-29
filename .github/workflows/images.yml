@@ -22,7 +22,7 @@ jobs:
       with:
         registry: registry.cn-hangzhou.aliyuncs.com
         username: 18256485741 # 这个是阿里云登录账号
-        password: Fzz#160903 # 这个是acr访问凭证中设置的固定密码
+        password: "Fzz#160903" # 这个是acr访问凭证中设置的固定密码
         logout: false
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
