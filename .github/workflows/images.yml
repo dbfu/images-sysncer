@@ -33,7 +33,7 @@ jobs:
          skopeo --override-arch arm64 copy docker://docker.io/timotto/rpi-minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/rpi-minio:latest
          skopeo copy docker://docker.io/portainer/portainer-ce:linux-arm64-2.20.3 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/portainer-ce:linux-arm64-2.20.3
          skopeo copy docker://docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-new-arm:latest
-         skopeo copy docker://docker.io/jeessy/ddns-go@sha256:c017f6ca74c8c63cffc018e92ceae41bbe03a9001d2dd2489d1379a3c5a67c80docker://registry.cn-hangzhou.aliyuncs.com/dbfu/ddns-go:latest
+         skopeo copy docker://docker.io/jeessy/ddns-go@sha256:c017f6ca74c8c63cffc018e92ceae41bbe03a9001d2dd2489d1379a3c5a67c80 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/ddns-go:latest
          
 
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称 
