@@ -37,7 +37,7 @@ jobs:
          skopeo copy docker://docker.io/nginxproxy/nginx-proxy@sha256:48edb34b16328e2b7f3ea37e648b9bd084859d59b650908530e62ea44412d46b docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx-proxy:latest
          skopeo copy docker://docker.io/nginxproxy/acme-companion@sha256:33ec7b072ffc951b73f730011f36d64cc68e5452110ebe8811403ab2e51d2557 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/acme-companion:latest
          skopeo copy docker://docker.io/nginx@sha256:c6db08e97d0bf2caf494a272e615013b3da74e785a7dd66838faac1a7c19fba8 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx:latest
-
+         skopeo copy docker://docker.io/halohub/halo@sha256:2188b6e42228a2e4ea34cf717c63d20388776ffa8540674ea3c224c27ffe1aba docker://registry.cn-hangzhou.aliyuncs.com/dbfu/halo:latest
         
 
 
