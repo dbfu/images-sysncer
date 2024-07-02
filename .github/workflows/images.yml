@@ -35,8 +35,8 @@ jobs:
          skopeo copy docker://docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-new-arm:latest
          skopeo copy docker://docker.io/jeessy/ddns-go@sha256:e3b561d43da7b85b0af916c5f2b3dff7bd9bdf3cffa42ba0b21bcfc1e52566b7 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/ddns-go-arm:latest
          skopeo copy docker://docker.io/nginxproxy/nginx-proxy@sha256:48edb34b16328e2b7f3ea37e648b9bd084859d59b650908530e62ea44412d46b docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx-proxy:latest
-         skopeo copy docker://docker.io/nginxproxy/nginx-proxy@sha256:33ec7b072ffc951b73f730011f36d64cc68e5452110ebe8811403ab2e51d2557 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/acme-companion:latest
-         skopeo copy docker://docker.io/nginxproxy/nginx-proxy@sha256:c6db08e97d0bf2caf494a272e615013b3da74e785a7dd66838faac1a7c19fba8 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx:latest
+         skopeo copy docker://docker.io/nginxproxy/acme-companion@sha256:33ec7b072ffc951b73f730011f36d64cc68e5452110ebe8811403ab2e51d2557 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/acme-companion:latest
+         skopeo copy docker://docker.io/nginx@sha256:c6db08e97d0bf2caf494a272e615013b3da74e785a7dd66838faac1a7c19fba8 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx:latest
 
         
 
