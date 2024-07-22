@@ -21,8 +21,8 @@ jobs:
       uses: docker/login-action@v2.2.0
       with:
         registry: registry.cn-hangzhou.aliyuncs.com
-        username: 18256485741 # 这个是阿里云登录账号
-        password: Fzz160903 # 这个是acr访问凭证中设置的固定密码
+        username: "${{ secrets.ALIYUN_REGISTRY_USER }}"
+        password: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" 
         logout: false
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
@@ -39,9 +39,4 @@ jobs:
          skopeo copy docker://docker.io/nginx@sha256:c6db08e97d0bf2caf494a272e615013b3da74e785a7dd66838faac1a7c19fba8 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx:latest
          skopeo copy docker://docker.io/halohub/halo@sha256:2188b6e42228a2e4ea34cf717c63d20388776ffa8540674ea3c224c27ffe1aba docker://registry.cn-hangzhou.aliyuncs.com/dbfu/halo:latest
         
-
-
-         
-
-      # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称 
 
