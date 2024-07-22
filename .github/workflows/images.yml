@@ -27,6 +27,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/portainer/portainer-ce@sha256:b58507815d9be61ad08374d2fdc1b761dcea835eb2b9fc1faba11e2db95c14d1 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/portainer-ce:alpine-sts
-       
+         skopeo copy docker://docker.io/bitnami/minio@sha256:f968d07b8ee3550adf7d965849d4a8465886253176403b554ec0194f45203764 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-arm:latest
+         
 
