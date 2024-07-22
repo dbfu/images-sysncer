@@ -27,6 +27,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/bitnami/minio@sha256:f968d07b8ee3550adf7d965849d4a8465886253176403b554ec0194f45203764 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-arm:latest
+         skopeo copy docker://docker.io/cloudflare/cloudflared@sha256:50283cb49f1e84efaee5207545cec9bb56afd0339795a5f6984e04ada3e631ae docker://registry.cn-hangzhou.aliyuncs.com/dbfu/cloudflared:latest
          
 
