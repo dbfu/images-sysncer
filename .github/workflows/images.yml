@@ -27,16 +27,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/mysql@sha256:81e9d95d528511718b81cb9c548e1b922976bf359ed1083782bdbbbccf9ad85d docker://registry.cn-hangzhou.aliyuncs.com/dbfu/mysql:latest
-         skopeo copy docker://docker.io/node:16.16.0 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/node:16.16.0
-         skopeo --override-arch arm64 copy docker://docker.io/bitnami/minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-arm64:latest
-         skopeo --override-arch arm64 copy docker://docker.io/timotto/rpi-minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/rpi-minio:latest
-         skopeo copy docker://docker.io/portainer/portainer-ce:linux-arm64-2.20.3 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/portainer-ce:linux-arm64-2.20.3
-         skopeo copy docker://docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-new-arm:latest
-         skopeo copy docker://docker.io/jeessy/ddns-go@sha256:e3b561d43da7b85b0af916c5f2b3dff7bd9bdf3cffa42ba0b21bcfc1e52566b7 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/ddns-go-arm:latest
-         skopeo copy docker://docker.io/nginxproxy/nginx-proxy@sha256:48edb34b16328e2b7f3ea37e648b9bd084859d59b650908530e62ea44412d46b docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx-proxy:latest
-         skopeo copy docker://docker.io/nginxproxy/acme-companion@sha256:33ec7b072ffc951b73f730011f36d64cc68e5452110ebe8811403ab2e51d2557 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/acme-companion:latest
-         skopeo copy docker://docker.io/nginx@sha256:c6db08e97d0bf2caf494a272e615013b3da74e785a7dd66838faac1a7c19fba8 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/nginx:latest
-         skopeo copy docker://docker.io/halohub/halo@sha256:2188b6e42228a2e4ea34cf717c63d20388776ffa8540674ea3c224c27ffe1aba docker://registry.cn-hangzhou.aliyuncs.com/dbfu/halo:latest
-        
+         skopeo copy docker://docker.io/portainer/portainer-ce@sha256:b58507815d9be61ad08374d2fdc1b761dcea835eb2b9fc1faba11e2db95c14d1 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/portainer-ce:alpine-sts
+       
 
