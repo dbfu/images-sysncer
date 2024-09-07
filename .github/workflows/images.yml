@@ -32,6 +32,7 @@ jobs:
          skopeo copy docker://docker.io/redis:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/redis:latest
          skopeo copy docker://docker.io/mysql:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/mysql:latest
          skopeo copy docker://docker.io/minio/minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-file:latest
+         skopeo copy docker://docker.io/dbfu/fluxy-admin-server:main docker://registry.cn-hangzhou.aliyuncs.com/dbfu/fluxy-admin-server:latest 
          
          
 
