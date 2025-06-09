@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/jenkins/jenkins:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/jenkins:latest
+         skopeo copy docker://docker.io/gplane/pnpm:8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/pnpm:8.4.0
 
 
          
