@@ -34,6 +34,7 @@ jobs:
          skopeo copy docker://docker.io/minio/minio:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/minio-file:latest
          skopeo copy docker://docker.io/dbfu/fluxy-admin-server:main docker://registry.cn-hangzhou.aliyuncs.com/dbfu/fluxy-admin-server:latest 
          skopeo copy docker://docker.io/redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/redis:smp
+         skopeo copy docker://docker.io/jenkins/jenkins:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/jenkins/jenkins:latest
 
 
          
