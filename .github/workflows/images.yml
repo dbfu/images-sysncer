@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/tonistiigi/binfmt:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/tonistiigi:latest
+         skopeo copy docker://docker.io/moby/buildkit:latest docker://registry.cn-hangzhou.aliyuncs.com/dbfu/buildkit:latest
 
 
          
