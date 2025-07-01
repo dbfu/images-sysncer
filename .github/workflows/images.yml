@@ -27,7 +27,10 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/upshow/pm2:node20 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/pm2:latest
+        
+         skopeo copy --override-arch=arm64 --override-os=linux docker://gplane/pnpm:node20 docker://registry.cn-hangzhou.aliyuncs.com/dbfu/pnpm:arm64
+
+         
 
 
          
